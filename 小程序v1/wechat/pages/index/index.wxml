@@ -1,0 +1,14 @@
+<!-- index.wxml -->
+
+<view class="container">
+  <view class="title">选择场所</view>
+  <picker mode="selector" range="{{places}}" bindchange="onPlaceChange">
+    <view class="picker">
+      {{place}}
+    </view>
+  </picker>
+  <view class="title">实时人数</view>
+  <view class="number">{{realtimeNum}}</view>
+  <view class="title">实时图片</view>
+  <image class="image" src="{{realtimeImage}}"></image>
+</view>
